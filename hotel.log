@@ -1,0 +1,757 @@
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Sat Feb 25 17:58:19 CST 2023]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/grud_ecut/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/grud_ecut/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/grud_ecut/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/grud_ecut/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN main com.alibaba.druid.pool.DruidDataSource -removeAbandoned is true, not use in production.
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.5.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_admin
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, id, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [createtime, targetid, commenttype, movieid, id, ownerid, user, content]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_lnr6plvgunokqkpi4pk1wtvnj]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_lnr6plvgunokqkpi4pk1wtvnj, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_preferences
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movie, preference, movieid, id, userid, timestamp]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_ex6iiedf6njeab7li1d3v9bcc]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_ex6iiedf6njeab7li1d3v9bcc, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_recommend
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movieid, id, userid]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_slide
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [path, name, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movies
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [preferences, published_year, name, id, type, poster]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, comments, id, avatar, email, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2023-02-25 17:58:20",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1492454864, ConnectTime:"2023-02-25 17:58:20", UseCount:2, LastActiveTime:"2023-02-25 17:58:21"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1754 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Feb 25 17:58:21 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyAdmin(int,java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getUsers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getUsers(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifySlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifySlide(java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addMovie()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getSlide()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addSlide(org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getMovies],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getMovies(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteSlide(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getComments],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getComments(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyImg(java.lang.String,java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/doAddMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.doAddMovie(org.springframework.web.multipart.MultipartFile,com.grud.ecut.dto.MovieDto) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.getAdmin()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.doModifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getModifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.addImg()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchUser(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchMovie(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteComment(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteMovie(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/getComment],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.CommentController.getComment(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/review],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.CommentController.review(com.grud.ecut.dto.CommentDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getIntroduction],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.GrepController.register(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getPoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.getPoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/savePoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.savePoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/doRate],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.MovieController.register(int,int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/search],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.search(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie2],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie2(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.test(int) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateUB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateUB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/improveUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.improveUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/recommend],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.recommend(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateIB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateIB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/getRecommendation],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.RecommendController.getRecommendation(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/doRegister],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.userController.register(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/getMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.getMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.hello()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.logout()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Feb 25 17:58:21 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Feb 25 17:58:21 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/admin.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 475 ms
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Feb 25 17:58:21 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Sun Feb 26 16:58:41 CST 2023]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN main com.alibaba.druid.pool.DruidDataSource -removeAbandoned is true, not use in production.
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.5.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_admin
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, id, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [createtime, targetid, commenttype, movieid, id, ownerid, user, content]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_lnr6plvgunokqkpi4pk1wtvnj]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_lnr6plvgunokqkpi4pk1wtvnj, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_preferences
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movie, preference, movieid, id, userid, timestamp]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_ex6iiedf6njeab7li1d3v9bcc]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_ex6iiedf6njeab7li1d3v9bcc, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_recommend
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movieid, id, userid]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_slide
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [path, name, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movies
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [preferences, published_year, name, id, type, poster]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, comments, id, avatar, email, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2023-02-26 16:58:42",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:974471358, ConnectTime:"2023-02-26 16:58:42", UseCount:2, LastActiveTime:"2023-02-26 16:58:43"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2061 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 16:58:43 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getComments],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getComments(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getMovies],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getMovies(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyAdmin(int,java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addMovie()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getSlide()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifySlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifySlide(java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getUsers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getUsers(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteSlide(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addSlide(org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.addImg()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchMovie(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteComment(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyImg(java.lang.String,java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchUser(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.doModifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteMovie(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getModifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.getAdmin()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/doAddMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.doAddMovie(org.springframework.web.multipart.MultipartFile,com.grud.ecut.dto.MovieDto) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/getComment],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.CommentController.getComment(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/review],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.CommentController.review(com.grud.ecut.dto.CommentDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getIntroduction],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.GrepController.register(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getPoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.getPoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/savePoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.savePoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/doRate],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.MovieController.register(int,int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/search],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.search(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie2],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie2(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.test(int) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateUB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateUB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateIB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateIB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/recommend],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.recommend(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/improveUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.improveUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/getRecommendation],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.RecommendController.getRecommendation(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.TestController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/doRegister],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.userController.register(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/getMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.getMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.logout()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.hello()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 16:58:43 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 16:58:43 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping -Mapped URL path [/testController] onto handler '/testController'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/admin.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 426 ms
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/movie/] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/movie/] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/movie/testController/test] in DispatcherServlet with name 'dispatcher'
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 16:58:43 CST 2023]; parent: Root WebApplicationContext
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing Root WebApplicationContext: startup date [Sun Feb 26 16:58:41 CST 2023]; root of context hierarchy
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closing ...
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Sun Feb 26 17:09:28 CST 2023]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN main com.alibaba.druid.pool.DruidDataSource -removeAbandoned is true, not use in production.
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.5.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_admin
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, id, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [createtime, targetid, commenttype, movieid, id, ownerid, user, content]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_lnr6plvgunokqkpi4pk1wtvnj]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_lnr6plvgunokqkpi4pk1wtvnj, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_preferences
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movie, preference, movieid, id, userid, timestamp]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_ex6iiedf6njeab7li1d3v9bcc]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_ex6iiedf6njeab7li1d3v9bcc, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_recommend
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movieid, id, userid]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_slide
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [path, name, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movies
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [preferences, published_year, name, id, type, poster]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, comments, id, avatar, email, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2023-02-26 17:09:29",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1452232618, ConnectTime:"2023-02-26 17:09:29", UseCount:2, LastActiveTime:"2023-02-26 17:09:30"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1579 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:09:30 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getComments],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getComments(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.addImg()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyImg(java.lang.String,java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.getAdmin()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getModifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteMovie(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchUser(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchMovie(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.doModifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteComment(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/doAddMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.doAddMovie(org.springframework.web.multipart.MultipartFile,com.grud.ecut.dto.MovieDto) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addMovie()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyAdmin(int,java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getMovies],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getMovies(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getSlide()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteSlide(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifySlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifySlide(java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getUsers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getUsers(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addSlide(org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/review],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.CommentController.review(com.grud.ecut.dto.CommentDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/getComment],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.CommentController.getComment(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getPoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.getPoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/savePoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.savePoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getIntroduction],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.GrepController.register(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie2],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie2(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/doRate],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.MovieController.register(int,int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/search],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.search(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/improveUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.improveUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateIB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateIB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateUB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateUB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/recommend],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.recommend(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/getRecommendation],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.RecommendController.getRecommendation(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.test(int) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.TestController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.logout()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.hello()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/getMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.getMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/doRegister],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.userController.register(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:09:30 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:09:30 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping -Mapped URL path [/testController] onto handler '/testController'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/admin.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 496 ms
+WARN btpool0-2 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-2 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/testController/test] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-2 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/testController/] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-2 com.alibaba.druid.pool.DruidAbstractDataSource -discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/movie?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false, version : 1.2.8, lastPacketReceivedIdleMillis : 122041
+WARN btpool0-2 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/login] in DispatcherServlet with name 'dispatcher'
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:09:30 CST 2023]; parent: Root WebApplicationContext
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing Root WebApplicationContext: startup date [Sun Feb 26 17:09:28 CST 2023]; root of context hierarchy
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closing ...
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Sun Feb 26 17:12:54 CST 2023]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN main com.alibaba.druid.pool.DruidDataSource -removeAbandoned is true, not use in production.
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.5.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_admin
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, id, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [createtime, targetid, commenttype, movieid, id, ownerid, user, content]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_lnr6plvgunokqkpi4pk1wtvnj]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_lnr6plvgunokqkpi4pk1wtvnj, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_preferences
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movie, preference, movieid, id, userid, timestamp]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_ex6iiedf6njeab7li1d3v9bcc]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_ex6iiedf6njeab7li1d3v9bcc, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_recommend
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movieid, id, userid]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_slide
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [path, name, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movies
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [preferences, published_year, name, id, type, poster]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, comments, id, avatar, email, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2023-02-26 17:12:55",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1129874021, ConnectTime:"2023-02-26 17:12:55", UseCount:2, LastActiveTime:"2023-02-26 17:12:55"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1576 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:12:56 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getComments],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getComments(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyAdmin(int,java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addMovie()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getSlide()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getMovies],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getMovies(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addSlide(org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifySlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifySlide(java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteSlide(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getUsers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getUsers(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.addImg()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getModifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteMovie(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.getAdmin()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyImg(java.lang.String,java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchUser(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.doModifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/doAddMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.doAddMovie(org.springframework.web.multipart.MultipartFile,com.grud.ecut.dto.MovieDto) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteComment(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchMovie(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/getComment],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.CommentController.getComment(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/review],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.CommentController.review(com.grud.ecut.dto.CommentDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getIntroduction],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.GrepController.register(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getPoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.getPoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/savePoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.savePoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/doRate],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.MovieController.register(int,int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/search],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.search(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie2],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie2(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.test(int) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/getRecommendation],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.RecommendController.getRecommendation(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateIB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateIB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/improveUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.improveUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateUB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateUB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/recommend],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.recommend(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.TestController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/doRegister],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.userController.register(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.logout()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/getMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.getMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.hello()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:12:56 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:12:56 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping -Mapped URL path [/testController] onto handler '/testController'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/admin.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 429 ms
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/movie/] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-6 com.alibaba.druid.pool.DruidAbstractDataSource -discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/movie?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false, version : 1.2.8, lastPacketReceivedIdleMillis : 109906
+WARN btpool0-6 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/movie/index] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-6 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/movie/testController/test] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-6 com.alibaba.druid.pool.DruidAbstractDataSource -discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/movie?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false, version : 1.2.8, lastPacketReceivedIdleMillis : 206608
+WARN btpool0-6 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/movie/] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-9 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/movie/index.html] in DispatcherServlet with name 'dispatcher'
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:12:56 CST 2023]; parent: Root WebApplicationContext
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing Root WebApplicationContext: startup date [Sun Feb 26 17:12:54 CST 2023]; root of context hierarchy
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closing ...
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Sun Feb 26 17:26:48 CST 2023]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN main com.alibaba.druid.pool.DruidDataSource -removeAbandoned is true, not use in production.
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.5.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_admin
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, id, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [createtime, targetid, commenttype, movieid, id, ownerid, user, content]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_lnr6plvgunokqkpi4pk1wtvnj]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_lnr6plvgunokqkpi4pk1wtvnj, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_preferences
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movie, preference, movieid, id, userid, timestamp]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_ex6iiedf6njeab7li1d3v9bcc]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_ex6iiedf6njeab7li1d3v9bcc, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_recommend
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movieid, id, userid]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_slide
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [path, name, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movies
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [preferences, published_year, name, id, type, poster]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, comments, id, avatar, email, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2023-02-26 17:26:48",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:195587155, ConnectTime:"2023-02-26 17:26:49", UseCount:2, LastActiveTime:"2023-02-26 17:26:49"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1765 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:26:49 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getComments],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getComments(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addMovie()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getMovies],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getMovies(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyAdmin(int,java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getSlide()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getUsers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getUsers(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifySlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifySlide(java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteSlide(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addSlide(org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.addImg()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchUser(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.getAdmin()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/doAddMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.doAddMovie(org.springframework.web.multipart.MultipartFile,com.grud.ecut.dto.MovieDto) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchMovie(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteComment(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteMovie(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getModifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.doModifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyImg(java.lang.String,java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/review],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.CommentController.review(com.grud.ecut.dto.CommentDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/getComment],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.CommentController.getComment(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getPoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.getPoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/savePoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.savePoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getIntroduction],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.GrepController.register(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie2],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie2(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/doRate],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.MovieController.register(int,int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/search],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.search(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/getRecommendation],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.RecommendController.getRecommendation(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateIB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateIB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateUB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateUB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/improveUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.improveUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/recommend],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.recommend(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.test(int) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.TestController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.logout()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/getMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.getMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.hello()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/doRegister],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.userController.register(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:26:49 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:26:49 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping -Mapped URL path [/testController] onto handler '/testController'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/admin.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/index.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 552 ms
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/movie/] in DispatcherServlet with name 'dispatcher'
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:26:49 CST 2023]; parent: Root WebApplicationContext
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing Root WebApplicationContext: startup date [Sun Feb 26 17:26:48 CST 2023]; root of context hierarchy
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closing ...
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Sun Feb 26 17:36:26 CST 2023]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/Soft/Intellij/ProjectWorkSpace/movie/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN main com.alibaba.druid.pool.DruidDataSource -removeAbandoned is true, not use in production.
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.5.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_admin
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, id, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [createtime, targetid, commenttype, movieid, id, ownerid, user, content]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_lnr6plvgunokqkpi4pk1wtvnj]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_lnr6plvgunokqkpi4pk1wtvnj, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_preferences
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movie, preference, movieid, id, userid, timestamp]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: [fk_ex6iiedf6njeab7li1d3v9bcc]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [fk_ex6iiedf6njeab7li1d3v9bcc, primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_recommend
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [movieid, id, userid]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movie_slide
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [path, name, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.movies
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [preferences, published_year, name, id, type, poster]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: movie.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [password, comments, id, avatar, email, username]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2023-02-26 17:36:27",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1922881634, ConnectTime:"2023-02-26 17:36:27", UseCount:2, LastActiveTime:"2023-02-26 17:36:28"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1546 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:36:28 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getComments],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getComments(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyAdmin(int,java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getMovies],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getMovies(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addMovie()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getSlide()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getUsers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getUsers(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.addSlide(org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteSlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteSlide(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifySlide],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifySlide(java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/getAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.getAdmin()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/addImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.AdminController.addImg()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyMovie],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.AdminController.doModifyMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteMovie(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyUser],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.getModifyUser(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchUser(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/modifyImg],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.modifyImg(java.lang.String,java.lang.String,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/searchMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.searchMovie(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/doAddMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.doAddMovie(org.springframework.web.multipart.MultipartFile,com.grud.ecut.dto.MovieDto) throws java.lang.IllegalStateException,java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/adminController/deleteComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.AdminController.deleteComment(int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/getComment],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.CommentController.getComment(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/commentController/review],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.CommentController.review(com.grud.ecut.dto.CommentDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getIntroduction],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.GrepController.register(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getPoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.getPoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/savePoster],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.GrepController.savePoster() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/doRate],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.MovieController.register(int,int,int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/search],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.search(java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/movieController/getTypedMovie2],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.MovieController.getTypedMovie2(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.test(int) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateUB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateUB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/improveUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.improveUser(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/evaluateIB],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.evaluateIB(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/recommend],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.RecommendController.recommend(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/recommendController/getRecommendation],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.RecommendController.getRecommendation(int)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.TestController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.index()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/doRegister],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json || */*],custom=[]}" onto public com.grud.ecut.dto.Json com.grud.ecut.controller.userController.register(com.grud.ecut.dto.UserDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.test()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.grud.ecut.controller.userController.logout()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.login(java.lang.String,java.lang.String)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/getMovie],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.getMovie(com.grud.ecut.dto.MovieDto)
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/userController/hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.grud.ecut.controller.userController.hello()
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:36:28 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:36:28 CST 2023]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping -Mapped URL path [/testController] onto handler '/testController'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/admin.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/index.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 392 ms
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 26 17:36:28 CST 2023]; parent: Root WebApplicationContext
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext -Closing Root WebApplicationContext: startup date [Sun Feb 26 17:36:26 CST 2023]; root of context hierarchy
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closing ...
+INFO Shutdown com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
