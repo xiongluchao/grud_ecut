@@ -24,6 +24,9 @@ flash=swf,flv
 media=swf,flv,mp3,wav,wma,wmv,mid,avi,mpg,asf,rm,rmvb
 file=doc,docx,xls,xlsx,ppt,htm,html,txt,zip,rar,gz,bz2
 maxFileSize=102400
-##运行方式
-3.作为maven项目导入到idea
-4.运行jetty容器
+## 运行方式
+1.作为maven项目导入到idea
+2.运行jetty容器
+
+## 参考仓库
+https://github.com/staringlin/movie.git
