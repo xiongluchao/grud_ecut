@@ -4,8 +4,7 @@
 ### 
 1. git clone git@github.com:xiongluchao/grud_ecut.git
 ## 配置方式
-### 
-1.创建一个application.properties文件，配置相关数据库信息，主要内容如下：
+### 1.创建一个application.properties文件，配置相关数据库信息，主要内容如下：
 hibernate.dialect=org.hibernate.dialect.MySQLDialect
 driverClassName=com.mysql.jdbc.Driver
 validationQuery=SELECT 1
