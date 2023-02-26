@@ -1,4 +1,3 @@
-毕业设计
 # movie
 基于协同过滤算法的电影推荐系统 
 ## 下载方式
@@ -26,6 +25,7 @@ flash=swf,flv
 media=swf,flv,mp3,wav,wma,wmv,mid,avi,mpg,asf,rm,rmvb
 file=doc,docx,xls,xlsx,ppt,htm,html,txt,zip,rar,gz,bz2
 maxFileSize=102400
+
 ## 运行方式
 1.作为maven项目导入到idea
 2.运行jetty容器
